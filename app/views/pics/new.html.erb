@@ -3,11 +3,17 @@
 	<h1 class="custom-h1"> How did Kenny die? </h1>
 
 	<%= simple_form_for @pic do |f| %>
+
+		<%= f.input :image, label: 'Upload your image' %>
+		
 		<%= f.input :title, label: 'What is this picture about?', placeholder: 'Kenny and the moose' %>	
 		<%= f.input :subtitle, label: 'A little more detail...', placeholder: 'Episode 112' %>
 		<%= f.input :message, label: 'What were Kenny\'s last words?', placeholder: 'That\'s a big moose!' %>
 
 		<%= f.submit "Add my picture!", :class => 'btn btn-warning btn-large'%>
+
+		
+
 	<% end %>
 
 </div>
